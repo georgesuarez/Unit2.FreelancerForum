@@ -1,0 +1,11 @@
+h1 {
+    text-align: center;
+    
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    padding-top: 300px;
+    margin: 300px 300px auto 300px;
+    border: 2px solid black;
+}
