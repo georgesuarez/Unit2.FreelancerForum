@@ -1,6 +1,7 @@
 const names = ["Bob", "Alice", "Carol", "George", "Jose", "Tom"];
 const prices = [51, 20, 93, 121, 39, 12, 45, 112, 75];
 const occupations = ["Programmer", "Truck Driver", "Gardner", "Teacher", "Writer"];
+const maxFreelancers = 10;
 const people = [
     {
         name: "Dr.Slice",
@@ -47,7 +48,7 @@ function addFreelancer() {
     people.push({name: name, price: price, occupation: occupation});
     render();
     
-    if (people.length >= 10) {
+    if (people.length >= maxFreelancers) {
         clearInterval(addFreelancerIntervalId);
     }
 }
